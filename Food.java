@@ -1,3 +1,5 @@
+package com;
+
 class Food {
     private String name = null;
     private int calories = 0;
