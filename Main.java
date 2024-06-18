@@ -30,8 +30,8 @@ public class Main {
 
                         //break;
                     case 1:
-                        System.out.print("<1> 查詢  <2> 自行輸入 ：");
-                        int choose = sc.nextInt();
+                        //System.out.print("<1> 查詢  <2> 自行輸入 ：");
+                        //int choose = sc.nextInt();
                         //if (choose == 1) {
                             //Food result = foodDatabase.search(sc.next());
                             //if (result == null) {
@@ -107,6 +107,8 @@ public class Main {
     public static Food input(Scanner sc) {
             Food food = new Food();
 
+            System.out.println("請輸入食物資訊：");
+        
             System.out.print("食物名稱: ");
             food.setName(sc.next());
 
@@ -184,7 +186,7 @@ public class Main {
             System.out.println("您每日鈣質建議攝取量為：1000毫克");
         } else if (user.getAge() <= 18 && user.record.getTotalCalcium() < 1200) {
             System.out.println("今日攝取「鈣」不足");
-            System.out.println("您每日鈣質建議攝取量為：");
+            System.out.println("您每日鈣質建議攝取量為：1200毫克");
         } else if (user.getAge() > 18 && user.record.getTotalCalcium() < 1500) {
             System.out.println("今日攝取「鈣」不足");
             System.out.println("您每日鈣質建議攝取量為：1500毫克");
@@ -195,7 +197,7 @@ public class Main {
             System.out.println("您每日鎂建議攝取量為：385毫克");
         } else if (user.getGender() == 2 && user.record.getTotalMagnesium() < 325) {
             System.out.println("今日攝取「鎂」不足");
-            System.out.println("您每日鎂建議攝取量為");
+            System.out.println("您每日鎂建議攝取量為：325毫克");
         }
 
         if (user.getGender() == 1 && user.record.getTotalIron() < 8) {
