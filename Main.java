@@ -45,12 +45,6 @@ public class Main {
                             user.record.addFood(result);
                             //foodDatabase.addFood(result);
                             System.out.println(result.getName() + " 已加入記錄\n" + result.toString());
-                            }
-                        } else if (choose == 2) {
-                            Food result = input();
-                            user.record.addFood(result);
-                            foodDatabase.addFood(result);
-                            System.out.println(result.getName() + "已加入記錄\n" + result.toString());
                         //} 
                         break;
                     case 2:
