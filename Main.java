@@ -218,7 +218,7 @@ public class Main {
 
         if (user.getGender() == 1 && user.record.getTotalPhosphorus() > 1800) {
             System.out.println("今日攝取「磷」已過量");
-        } else if (user.getGender() == 2 && user.record.getTotalPhosphorus() < 1000) {
+        } else if (user.getGender() == 2 && user.record.getTotalPhosphorus() > 1000) {
             System.out.println("今日攝取「磷」已過量");
         }
 
